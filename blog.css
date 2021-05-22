@@ -1,0 +1,180 @@
+/* 1.navigation ,contant footer in html and css after than in utils max-width-1 max-width-2 for center contant and footer by m-auto 
+2. in navigation div-left and right */
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+/* font-family: 'Goblin One', cursive;
+font-family: 'Roboto Condensed', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+.navigation{
+    font-family: var(--font3);
+    /* height: 74px; */
+    /* background-color: rgb(176, 250, 255); */
+    /* border: 2px outset black;
+    border-radius: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 23px;
+
+}
+.nav-left{
+    font-size: 35px;
+    display: flex;
+    
+
+}
+@keyframes changes{
+    0% {color: red;}
+    10% {color: blue;}
+    20% {color: green;}
+    30% {color: yellow;}
+    40% {color: deeppink;}
+    50% {color: goldenrod;}
+    60% {color: green;}
+    70% {color: sandybrown;}
+    80% {color: rebeccapurple;}
+    90% {color: aquamarine;}
+
+}
+.nav-left span{
+    border: 4px outset black;
+    border-radius: 15px;
+    background-color: cyan;
+   
+}
+#animate{
+    animation-name: changes;
+    animation-iteration-count: infinite;
+    animation-duration:7s;
+    animation-delay: 7s;
+
+}
+
+
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.nav-left ul li{
+    list-style: none;
+    margin: 0 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+    /* background-color: rgba(5, 255, 222,0.5); */
+    /* border: 5px outset red;
+    border-radius: 10px; */
+    align-items: center;
+    
+}
+.nav-left ul li a:hover{
+    color: var(--main-bg-color);
+    
+    
+}
+
+.contant-left{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 50px;
+    z-index: 1;
+
+}
+.contant-right{
+    /* width:50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contant-right img{
+    height: 355px;
+    border: 2px solid black;
+    border-radius: 200px;
+
+
+}
+.contant{
+    height: 100%;
+    /* background-color: rgb(99, 238, 99); */
+    display: flex;
+    margin-top: 34px;
+    padding: 9px;
+    position: relative;
+}
+.contant::after{
+    content: "";
+    background-image: url("../img/article-3.jpg");
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.35;
+    border-radius: 10px;
+
+}
+.home-articles{
+    /* height: 455px; */
+    padding:18px;
+    background-color: rgba(248, 203, 203,0.5);
+    margin-top: 23px;
+    position: relative;
+
+
+}
+.year-box{
+    position: absolute;
+    width: 234px;
+    height: 255px;
+    /* background-color: red; */
+    right: 0px;
+    top: 100px;
+    font-size: 18px;
+}
+.year-box div{
+    margin: 12px 0px;
+}
+.home-article{
+    display: flex;
+    margin: 25px;
+
+}
+.home-article-contant{
+    align-self: center;
+    padding: 0px 27px;
+}
+.home-article-contant a{
+    text-decoration: none;
+    color: black;
+}
+.home-article img{
+    width: 300px;
+    height: 300px;
+}
+.footer{
+    height: 50px;
+    background-color:rgb(56, 4, 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction:column ;
+}
+.footer a{
+    color: white;
+}

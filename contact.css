@@ -1,0 +1,32 @@
+.contact-contant{
+    height: 395px;
+    height: 100vh;
+    /* background-color: rgb(99, 238, 99); */
+    margin-top: 34px;
+    padding: 9px;
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+
+}
+.contact-contant h1{
+    margin-left:556px;
+}
+
+.contact-contant::after{
+    content: "";
+    background-image: url("../img/article-3.jpg");
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    opacity: 0.35;
+    border-radius: 10px;
+   
+    z-index: -1;
+    
+}
+.contact-form{
+    margin-left: 250px;
+
+}
